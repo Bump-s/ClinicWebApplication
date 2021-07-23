@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using ClinicWebApplication.Enums;
 
 namespace ClinicWebApplication.Entities
@@ -6,8 +7,9 @@ namespace ClinicWebApplication.Entities
     public class Patient : User
     {
         public DateTime RegistrationDate { get; set; }
-        public Schedule Schedule { get; set; }
         public MedicalHistory MedicalHistory { get; set; }
+        public List<Appointment> Appointments { get; set; }
+        public List<Schedule> Schedules { get; set; }
 
         public Patient()
         {

@@ -1,6 +1,5 @@
 ﻿using ClinicWebApplication.Entities;
 using System;
-using System.Collections.Generic;
 
 namespace ClinicWebApplication.Modules
 {
@@ -24,6 +23,11 @@ namespace ClinicWebApplication.Modules
             };
 
             return sickness;
+        }
+
+        public void UpdateSickness(Sickness sickness)
+        {
+            throw new NotImplementedException();
         }
     }
 }

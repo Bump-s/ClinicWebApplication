@@ -22,18 +22,15 @@ namespace ClinicWebApplication.Modules
             return appointment;
         }
 
-        public void DeleteAppointment(Appointment appointment)
+        public void CanceleAppointment(Appointment appointment)
         {
+            appointment.AppointmentStatus = AppointmentStatus.Canceled;
         }
 
-        public void ReadAppointment(Appointment appointment)
+        public void CompleteAppointment(Appointment appointment)
         {
-
+            appointment.AppointmentStatus = AppointmentStatus.Completed;
         }
 
-        public Appointment UpdateAppointment(Appointment appointment)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
