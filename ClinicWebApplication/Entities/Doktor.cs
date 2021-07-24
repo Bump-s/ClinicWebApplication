@@ -10,11 +10,5 @@ namespace ClinicWebApplication.Entities
         public List<Appointment> Appointments { get; set; }
         public Schedule Schedule { get; set; }
 
-        public Doktor(Position position, Speciality speciality)
-        {
-            Role = Role.Doktor;
-            Position = position;
-            Speciality = speciality;
-        }
     }
 }

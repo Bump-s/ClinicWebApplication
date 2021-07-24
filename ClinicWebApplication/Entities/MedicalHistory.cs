@@ -6,6 +6,5 @@ namespace ClinicWebApplication.Entities
     {
         public List<Sickness> Sickness { get; set; }
         public List<Appointment> Appointments { get; set; }
-
     }
 }

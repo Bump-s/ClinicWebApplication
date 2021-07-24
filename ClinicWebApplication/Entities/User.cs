@@ -5,7 +5,6 @@ namespace ClinicWebApplication.Entities
 {
     public abstract class User
     {
-
         public Guid Id { get; set; }
         public Role Role { get; set; }
         public string FullName { get; set; }

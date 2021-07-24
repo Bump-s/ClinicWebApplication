@@ -1,5 +1,4 @@
-﻿
-namespace ClinicWebApplication.Enums
+﻿namespace ClinicWebApplication.Enums
 {
     public enum Position
     {
