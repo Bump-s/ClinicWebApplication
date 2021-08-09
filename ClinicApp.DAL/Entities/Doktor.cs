@@ -1,8 +1,8 @@
-﻿using ClinicWebApplication.Enums;
+﻿using ClinicApp.DAL.Enums;
 using System;
 using System.Collections.Generic;
 
-namespace ClinicWebApplication.Entities
+namespace ClinicApp.DAL.Entities
 {
     [Serializable]
     public class Doktor : User

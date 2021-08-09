@@ -1,8 +1,7 @@
-﻿namespace ClinicWebApplication.Enums
+﻿namespace ClinicApp.DAL.Enums
 {
     public enum Speciality
     {
         Test = 0,
-        Test1 = 1,
     }
 }

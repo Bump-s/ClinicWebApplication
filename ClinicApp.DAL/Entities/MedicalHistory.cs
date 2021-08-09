@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ClinicWebApplication.Entities
+namespace ClinicApp.DAL.Entities
 {
     public class MedicalHistory
     {

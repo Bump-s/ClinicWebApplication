@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicWebApplication", "ClinicWebApplication\ClinicWebApplication.csproj", "{91A632C8-DC40-4DA5-BC5D-766427905B2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicWebApplication", "ClinicWebApplication\ClinicWebApplication.csproj", "{91A632C8-DC40-4DA5-BC5D-766427905B2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicApp.WEB", "ClinicApp.WEB\ClinicApp.WEB.csproj", "{79DE621D-B6F1-4315-ACEE-46D8A16A972E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicApp.DAL", "ClinicApp.DAL\ClinicApp.DAL.csproj", "{19F6CA18-AD0C-476C-BB0E-7887ADB90F3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicApp.BLL", "ClinicApp.BLL\ClinicApp.BLL.csproj", "{D9FC6F07-5619-4C58-A4F8-40EE881EFA22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business logic", "Business logic", "{58EFDB32-A909-404D-835A-3EDB21107214}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{E879CC91-D557-4211-88FF-8FEFE1BCB240}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{07F9DFD8-3FB1-4111-B964-7B75C76482D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +27,26 @@ Global
 		{91A632C8-DC40-4DA5-BC5D-766427905B2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91A632C8-DC40-4DA5-BC5D-766427905B2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91A632C8-DC40-4DA5-BC5D-766427905B2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79DE621D-B6F1-4315-ACEE-46D8A16A972E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79DE621D-B6F1-4315-ACEE-46D8A16A972E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79DE621D-B6F1-4315-ACEE-46D8A16A972E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79DE621D-B6F1-4315-ACEE-46D8A16A972E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F6CA18-AD0C-476C-BB0E-7887ADB90F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F6CA18-AD0C-476C-BB0E-7887ADB90F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F6CA18-AD0C-476C-BB0E-7887ADB90F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F6CA18-AD0C-476C-BB0E-7887ADB90F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9FC6F07-5619-4C58-A4F8-40EE881EFA22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9FC6F07-5619-4C58-A4F8-40EE881EFA22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9FC6F07-5619-4C58-A4F8-40EE881EFA22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9FC6F07-5619-4C58-A4F8-40EE881EFA22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{79DE621D-B6F1-4315-ACEE-46D8A16A972E} = {07F9DFD8-3FB1-4111-B964-7B75C76482D4}
+		{19F6CA18-AD0C-476C-BB0E-7887ADB90F3A} = {E879CC91-D557-4211-88FF-8FEFE1BCB240}
+		{D9FC6F07-5619-4C58-A4F8-40EE881EFA22} = {58EFDB32-A909-404D-835A-3EDB21107214}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A894DD3-15F4-4072-BD42-F7EC9FA870E1}
