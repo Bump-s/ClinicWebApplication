@@ -6,12 +6,12 @@ using System.Linq;
 
 namespace ClinicWebApplication.Modules
 {
-    class DoktorModule
+    class DoctorModule
     {
-        public Doktor CreateDoktor(string fullname, DateTime birthDate, string phoneNumber,
+        public Doctor CreateDoctor(string fullname, DateTime birthDate, string phoneNumber,
             string email, Position position, Speciality speciality)
         {
-            var doktor = new Doktor()
+            var doktor = new Doctor()
             {
                 Id = Guid.NewGuid(),
                 FullName = fullname,
@@ -26,41 +26,41 @@ namespace ClinicWebApplication.Modules
             return doktor;
         }
 
-        public void AddShedule(Doktor doktor)
+        public void AddShedule(Doctor doktor)
         {
             var scheduleModule = new ScheduleModule();
             doktor.Schedule = scheduleModule.GenerateSchedule();
         }
 
-        public void AddAppointment(Doktor doktor, Appointment appointment)
+        public void AddAppointment(Doctor doktor, Appointment appointment)
         {
             doktor.Appointments.Add(appointment);
         }
 
-        public Doktor GetDoktorByName(string name, string path)
+        public Doctor GetDoctorByName(string name, string path)
         {
             var jsonModule = new JsonModule();
-            List<Doktor> doktors = jsonModule.ReadJson<List<Doktor>>(path);
+            List<Doctor> doktors = jsonModule.ReadJson<List<Doctor>>(path);
 
-            var selectedDoktor = doktors.FirstOrDefault(s => s.FullName.Equals(name));
+            var selectedDoctor = doktors.FirstOrDefault(s => s.FullName.Equals(name));
 
-            return selectedDoktor;
+            return selectedDoctor;
         }
 
-        public IEnumerable<IGrouping<Speciality, Doktor>> GroupDoktorsBySpeciality(string path)
+        public IEnumerable<IGrouping<Speciality, Doctor>> GroupDoktorsBySpeciality(string path)
         {
             var jsonModule = new JsonModule();
-            List<Doktor> doktors = jsonModule.ReadJson<List<Doktor>>(path);
+            List<Doctor> doktors = jsonModule.ReadJson<List<Doctor>>(path);
 
             var doktorGroups = doktors.GroupBy(d => d.Speciality);
 
             return doktorGroups;
         }
 
-        public IEnumerable<Doktor> GetDoktorsWithSpeciality(string path, Speciality speciality)
+        public IEnumerable<Doctor> GetDoktorsWithSpeciality(string path, Speciality speciality)
         {
             var jsonModule = new JsonModule();
-            List<Doktor> doktors = jsonModule.ReadJson<List<Doktor>>(path);
+            List<Doctor> doktors = jsonModule.ReadJson<List<Doctor>>(path);
 
             var selectedDoktors = doktors.Where(d => d.Speciality.Equals(speciality));
 

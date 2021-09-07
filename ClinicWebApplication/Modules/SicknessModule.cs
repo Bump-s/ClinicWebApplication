@@ -6,7 +6,7 @@ namespace ClinicWebApplication.Modules
     public class SicknessModule
     {
         public Sickness CreateSickness(string sicknessName, DateTime dateRecovery,
-            Doktor doktor, string usedDrugs = "", string research = "", string doktorComment = "",
+            Doctor doktor, string usedDrugs = "", string research = "", string doktorComment = "",
             string symptoms = "", string patientComplaints = "")
         {
             var sickness = new Sickness()

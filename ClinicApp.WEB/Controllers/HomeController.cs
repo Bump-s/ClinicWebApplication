@@ -1,4 +1,6 @@
-﻿using ClinicApp.WEB.Models;
+﻿using ClinicApp.BLL.DTO;
+using ClinicApp.DAL.Entities;
+using ClinicApp.WEB.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -11,27 +13,29 @@ namespace ClinicApp.WEB.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        //private List<DoctorViewModel> doctors = new List<DoctorViewModel> {
+        //    new DoctorViewModel { FullName = "Aaaa", Email = "aaaa@aaa.com", Id = Guid.NewGuid(), PhoneNumber = "+3904821479"},
+        //    new DoctorViewModel { FullName = "Bbbb", Email = "bbbb@bbb.com", Id = Guid.NewGuid(), PhoneNumber = "+3904123527"},
+        //    new DoctorViewModel { FullName = "Cccc", Email = "cccc@ccc.com", Id = Guid.NewGuid(), PhoneNumber = "+3902125561"},
+        //    new DoctorViewModel { FullName = "Dddd", Email = "dddd@ddd.com", Id = Guid.NewGuid(), PhoneNumber = "+3909562324"},
+        //};
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
+        public ActionResult Index()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        //public ActionResult CreateDoctor()
+        //{
+        //    return View(new DoctorViewModel() { Id = Guid.NewGuid() });
+        //}
+
+        //[HttpPost]
+        //public IActionResult CreateDoctor(Doctor doctor)
+        //{
+        //    string userInfo = $"Name: {doctor.UserName}  Email: {doctor.Email} Phone: {doctor.PhoneNumber}";
+        //    return Content(userInfo);
+        //}
     }
 }
+

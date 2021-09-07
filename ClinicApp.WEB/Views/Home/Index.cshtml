@@ -1,8 +1,15 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@*@using ClinicApp.WEB.Models
+@model IEnumerable<DoctorViewModel>
+@{
+    ViewData["Title"] = "Index";
 }
+<h1>All doctors</h1>
+<table class="table">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    @foreach (DoctorViewModel d in Model)
+    {
+        <tr>
+            <td>@d.FullName</td><td>@d.Email</td><td>@d.PhoneNumber</td>
+        </tr>
+    }
+</table>*@ 

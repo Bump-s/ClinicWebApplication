@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicWebApplication", "ClinicWebApplication\ClinicWebApplication.csproj", "{91A632C8-DC40-4DA5-BC5D-766427905B2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicApp.WEB", "ClinicApp.WEB\ClinicApp.WEB.csproj", "{79DE621D-B6F1-4315-ACEE-46D8A16A972E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicApp.WEB", "ClinicApp.WEB\ClinicApp.WEB.csproj", "{79DE621D-B6F1-4315-ACEE-46D8A16A972E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicApp.DAL", "ClinicApp.DAL\ClinicApp.DAL.csproj", "{19F6CA18-AD0C-476C-BB0E-7887ADB90F3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicApp.DAL", "ClinicApp.DAL\ClinicApp.DAL.csproj", "{19F6CA18-AD0C-476C-BB0E-7887ADB90F3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicApp.BLL", "ClinicApp.BLL\ClinicApp.BLL.csproj", "{D9FC6F07-5619-4C58-A4F8-40EE881EFA22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicApp.BLL", "ClinicApp.BLL\ClinicApp.BLL.csproj", "{D9FC6F07-5619-4C58-A4F8-40EE881EFA22}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business logic", "Business logic", "{58EFDB32-A909-404D-835A-3EDB21107214}"
 EndProject

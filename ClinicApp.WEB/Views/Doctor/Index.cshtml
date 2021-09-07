@@ -1,0 +1,24 @@
+﻿@model List<DoctorViewModel>
+@{
+    ViewBag.Title = "Doctors";
+}
+
+<h2>List Doctors</h2>
+@foreach (var item in Model)
+{
+    <p>
+        <label>Name</label><br />
+        <input readonly="readonly" type="text" name="FullName" value="@item.FullName" />
+    </p>
+    <p>
+        <label>Email</label><br />
+        <input readonly="readonly" type="text" name="Email" value="@item.Email" />
+    </p>
+    <p>
+        <label>Phone Number</label><br />
+        <input readonly="readonly" type="text" name="PhoneNumber" value="@item.PhoneNumber" />
+    </p>
+}
+
+
+

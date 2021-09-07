@@ -6,7 +6,7 @@ namespace ClinicWebApplication.Modules
 {
     public class AppointmentModule
     {
-        public Appointment CreateAppointment(Patient patient, Doktor doktor, DateTime dateTime, string comment = "")
+        public Appointment CreateAppointment(Patient patient, Doctor doktor, DateTime dateTime, string comment = "")
         {
             var appointment = new Appointment()
             {

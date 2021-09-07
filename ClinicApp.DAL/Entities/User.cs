@@ -1,15 +1,17 @@
-﻿using ClinicWebApplication.Enums;
+﻿
+using ClinicApp.DAL.Enums;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 
 namespace ClinicApp.DAL.Entities
 {
-    public abstract class User
+    public abstract class User: IdentityUser
     {
-        public Guid Id { get; set; }
-        public Role Role { get; set; }
+        //public Guid Id { get; set; }
+        //public Role Role { get; set; }
         public string FullName { get; set; }
         public DateTime BirthDate { get; set; }
-        public string PhoneNumber { get; set; }
-        public string Email { get; set; }
+        //public string PhoneNumber { get; set; }
+        //public string Email { get; set; }
     }
 }

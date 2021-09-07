@@ -1,0 +1,23 @@
+﻿@model DoctorViewModel
+@{
+    ViewBag.Title = "CreateDoctor";
+}
+
+<h2>Create Doctor</h2>
+<form method="post">
+    <p>
+        <label>Name</label><br />
+        <input type="text" name="FullName" />
+    </p>
+    <p>
+        <label>Email</label><br />
+        <input type="text" name="Email" />
+    </p>
+    <p>
+        <label>Phone Number</label><br />
+        <input type="text" name="PhoneNumber" />
+    </p>
+    <p>
+        <input type="submit" value="Submit" />
+    </p>
+</form>
