@@ -3,8 +3,6 @@ using ClinicApp.DAL.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ClinicApp.DAL.Context.Repository
@@ -13,13 +11,19 @@ namespace ClinicApp.DAL.Context.Repository
     {
         private readonly EfContext _db;
 
-        public DoctorRepository()
+        public DoctorRepository(EfContext efContext)
         {
-            _db = new EfContext();
+            _db = efContext;
         }
         public void Create(Doctor doctor)
         {
             _db.Doctors.Add(doctor);
+            SaveChanges();
+        }
+
+        public Task CreateAsync(Doctor item)
+        {
+            throw new NotImplementedException();
         }
 
         public void Delete(Guid? id)
@@ -27,6 +31,8 @@ namespace ClinicApp.DAL.Context.Repository
             var doctor = _db.Doctors.Find(id);
             if (doctor != null)
                 _db.Doctors.Remove(doctor);
+            SaveChanges();
+
         }
 
         public Doctor Get(Guid? id)
@@ -42,6 +48,13 @@ namespace ClinicApp.DAL.Context.Repository
         public void Update(Doctor doctor)
         {
             _db.Entry(doctor).State = EntityState.Modified;
+            SaveChanges();
+
+        }
+
+        private void SaveChanges()
+        {
+            _db.SaveChanges();
         }
     }
 }

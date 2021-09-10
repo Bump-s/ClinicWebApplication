@@ -1,15 +1,18 @@
-﻿@*@using ClinicApp.WEB.Models
-@model IEnumerable<DoctorViewModel>
-@{
-    ViewData["Title"] = "Index";
+﻿@{
+    ViewData["Title"] = "Home Page";
 }
-<h1>All doctors</h1>
-<table class="table">
 
-    @foreach (DoctorViewModel d in Model)
-    {
-        <tr>
-            <td>@d.FullName</td><td>@d.Email</td><td>@d.PhoneNumber</td>
-        </tr>
-    }
-</table>*@ 
+
+@if (User.Identity.IsAuthenticated)
+{
+    <p>@User.Identity.Name</p>
+
+    <form method="post" asp-controller="Account" asp-action="Logout">
+        <input type="submit" value="Выход" />
+    </form>
+}
+else
+{
+    <a asp-controller="Account" asp-action="Login">Вход</a>
+    <a asp-controller="Account" asp-action="Register">Регистрация</a>
+}

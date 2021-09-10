@@ -1,15 +1,13 @@
 ﻿using ClinicApp.DAL.Entities;
 using ClinicApp.DAL.Enums;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using System;
 using System.Collections.Generic;
 
 namespace ClinicApp.BLL.DTO
 {
-    public class DoctorDTO : PageModel
+    public class DoctorDTO
     {
-        public string Id { get; set; }
-        //public Role Role { get; set; }
+        public Guid Id { get; set; }
         public string Speciality { get; set; }
         public string FullName { get; set; }
         public DateTime BirthDate { get; set; }

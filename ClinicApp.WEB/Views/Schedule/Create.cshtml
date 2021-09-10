@@ -1,0 +1,36 @@
+﻿@model ClinicApp.WEB.Models.ScheduleViewModel
+
+<h1>Create</h1>
+<form method="post" asp-controller="Schedule" asp-action="Create">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="TimeName"></label>
+        <input name="TimeName" />
+    </div>
+    <div>
+        <label asp-for="BegintWorkingHour"></label>
+        <input name="BegintWorkingHour" />
+    </div>
+    <div>
+        <label asp-for="EndWorkingHour"></label>
+        <input name="EndWorkingHour" />
+    </div>
+    <div>
+        <label asp-for="AvailableHoursForAppointment"></label>
+        <input name="AvailableHoursForAppointment" />
+    </div>
+    <div>
+        <label asp-for="Interval"></label>
+        <input name="Interval" />
+    </div>
+
+    <div>
+        <select asp-for="SelectedEmail"
+                asp-items="@(new SelectList(Model.Emails))">
+            <option>Please select one</option>
+        </select>
+    </div>
+    <div>
+        <input type="submit" value="Добавить рассписание" />
+    </div>
+</form>

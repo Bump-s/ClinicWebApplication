@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ClinicApp.DAL.Interfaces
 {
@@ -10,5 +11,6 @@ namespace ClinicApp.DAL.Interfaces
         void Create(T item);
         void Update(T item);
         void Delete(Guid? id);
+        Task CreateAsync(T item);
     }
 }

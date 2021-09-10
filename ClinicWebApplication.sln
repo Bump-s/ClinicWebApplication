@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicWebApplication", "ClinicWebApplication\ClinicWebApplication.csproj", "{91A632C8-DC40-4DA5-BC5D-766427905B2C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicApp.WEB", "ClinicApp.WEB\ClinicApp.WEB.csproj", "{79DE621D-B6F1-4315-ACEE-46D8A16A972E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicApp.DAL", "ClinicApp.DAL\ClinicApp.DAL.csproj", "{19F6CA18-AD0C-476C-BB0E-7887ADB90F3A}"
@@ -23,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{91A632C8-DC40-4DA5-BC5D-766427905B2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{91A632C8-DC40-4DA5-BC5D-766427905B2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{91A632C8-DC40-4DA5-BC5D-766427905B2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{91A632C8-DC40-4DA5-BC5D-766427905B2C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{79DE621D-B6F1-4315-ACEE-46D8A16A972E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{79DE621D-B6F1-4315-ACEE-46D8A16A972E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79DE621D-B6F1-4315-ACEE-46D8A16A972E}.Release|Any CPU.ActiveCfg = Release|Any CPU

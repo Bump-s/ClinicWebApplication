@@ -1,0 +1,35 @@
+﻿@model ClinicApp.WEB.Areas.Doctor.Models.DoctorRegisterViewModel
+
+<h2>Регистрация нового доктора</h2>
+<form method="post" asp-controller="DoctorRegister" asp-action="Register">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="Email">Email</label><br />
+        <input name="Email" />
+    </div>
+    <div>
+        <label asp-for="Password">Пароль</label><br />
+        <input name="Password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <label asp-for="PasswordConfirm">Подтвердите пароль</label><br />
+        <input name="PasswordConfirm" />
+        <span asp-validation-for="PasswordConfirm"></span>
+    </div>
+    <div>
+        <label asp-for="FullName">Ф.И.О.</label>
+        <input name="FullName" />
+    </div>
+    <div>
+        <label asp-for="PhoneNumber">Номер телефона</label>
+        <input name="PhoneNumber" />
+    </div>
+    <div>
+        <label asp-for="Speciality">Специализация</label>
+        <input name="Speciality" />
+    </div>
+    <div>
+        <input type="submit" value="Регистрация" />
+    </div>
+</form>

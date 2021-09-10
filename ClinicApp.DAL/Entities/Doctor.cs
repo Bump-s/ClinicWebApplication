@@ -10,7 +10,5 @@ namespace ClinicApp.DAL.Entities
         public Position Position { get; set; }
         public string Speciality { get; set; }
         public List<Appointment> Appointments { get; set; }
-        
-
     }
 }
